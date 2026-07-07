@@ -1,0 +1,19 @@
+/*
+ * Design tokens — sobrescritos em runtime pela configuracao_escritorio
+ * (ver shared/lib/branding.ts). Estética editorial: off-white,
+ * tipografia com tracking generoso, destaque em laranja queimado.
+ */
+:root {
+  --cor-primaria: #1a1a1a;
+  --cor-destaque: #e05a33;
+  --fundo: #faf8f5;
+  --superficie: #ffffff;
+  --texto: #1a1a1a;
+  --texto-suave: #6f6a64;
+  --borda: #e8e4de;
+
+  --raio-card: 12px;
+  --sombra-card:
+    0 1px 3px rgb(26 26 26 / 0.06),
+    0 4px 16px rgb(26 26 26 / 0.05);
+}

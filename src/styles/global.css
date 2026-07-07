@@ -1,0 +1,34 @@
+@import './tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-fundo font-sans text-texto antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-semibold tracking-tight;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--cor-destaque);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  /* label editorial: caixa alta com tracking generoso */
+  .rotulo-editorial {
+    @apply text-xs font-semibold uppercase tracking-[0.14em] text-texto-suave;
+  }
+}

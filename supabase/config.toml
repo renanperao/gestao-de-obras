@@ -1,0 +1,5 @@
+project_id = "gestao-de-obras"
+
+[db.seed]
+enabled = true
+sql_paths = ["./seed.sql"]
