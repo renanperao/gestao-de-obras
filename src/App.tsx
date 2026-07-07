@@ -7,6 +7,9 @@ import { RedirecionarPorPapel, RotaProtegida } from '@/shared/auth/guardas'
 import { AppLayout } from '@/app/AppLayout'
 import { DashboardPage } from '@/app/DashboardPage'
 import { PaginaEmBreve } from '@/app/PaginaEmBreve'
+import { ObrasPage } from '@/app/obras/ObrasPage'
+import { NovaObraPage } from '@/app/obras/NovaObraPage'
+import { ObraDetalhePage } from '@/app/obras/ObraDetalhePage'
 import { PortalLayout } from '@/portal/PortalLayout'
 import { PortalHomePage } from '@/portal/PortalHomePage'
 import { EmptyState } from '@/shared/components'
@@ -32,10 +35,9 @@ export function App() {
         }
       >
         <Route index element={<DashboardPage />} />
-        <Route
-          path="obras"
-          element={<PaginaEmBreve titulo="Obras" fase="Fase 1" />}
-        />
+        <Route path="obras" element={<ObrasPage />} />
+        <Route path="obras/nova" element={<NovaObraPage />} />
+        <Route path="obras/:obraId" element={<ObraDetalhePage />} />
         <Route
           path="suprimentos"
           element={<PaginaEmBreve titulo="Suprimentos" fase="Fase 4" />}
